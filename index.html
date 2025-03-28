@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/images/icon.webp" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/icon.webp"
+      type="image/x-icon"
+    />
     <title>Delicious Recipes & Easy Cooking Tips for Every Occasion</title>
-      <!-- J-Query -->
-      <script
+    <!-- J-Query -->
+    <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
@@ -19,602 +23,710 @@
     />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="./assets/style.css">
-</head>
-<body>
-   <div class="center_div">
-    <header>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div class="center_div">
+      <!-- <header> -->
         <div class="upper_nav">
-            <img src="./assets/images/logo.png" alt="" class="img-fluid logo">
-            <p class="upper_nav_txt">
-                <span class="light_green_txt">The Food Blog</span>
-            </p>
+          <a href=""><img src="./assets/images/logo.png" alt="" class="logo" /></a>
+          <p class="upper_nav_txt">
+            <span class="light_green_txt">The Food Blog</span>
+          </p>
         </div>
         <nav>
-            <div class="menu dark_green_bg">
+          <div class="menu dark_green_bg">
+            <div class="menu_item">
                 <a href="">Home</a>
-                <div class="menu_item">
-                    <a href="">Blogs</a>
-                    <img src="./assets/images/down-arrow.png" alt="">
-                    <div class="dropdown">
-                        <ul>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="menu_item">
-                    <a href="">Guides</a>
-                     <img src="./assets/images/down-arrow.png" alt="">
-                </div>
-                <div class="menu_item">
-                    <a href="">Reviews</a>
-                     <img src="./assets/images/down-arrow.png" alt="">
-                </div>
-                <div class="menu_item">
-                    <a href="">Food & Recipes</a>
-                     <img src="./assets/images/down-arrow.png" alt="">
-                </div>
             </div>
-            <div class="search">
-                <input type="text" placeholder="Looking For?">
-                <div class="search_btn">
-                    <img src="./assets/images/search.png" alt="">
+            <div class="menu_item">
+              <a href="">Blogs</a>
+              <img src="./assets/images/down-arrow.png" alt="" />
+              <div class="dropdown">
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="menu_item">
+              <a href="">Guides</a>
+              <img src="./assets/images/down-arrow.png" alt="" />
+            </div>
+            <div class="menu_item">
+              <a href="">Reviews</a>
+              <img src="./assets/images/down-arrow.png" alt="" />
+            </div>
+            <div class="menu_item">
+              <a href="">Food & Recipes</a>
+              <img src="./assets/images/down-arrow.png" alt="" />
+            </div>
+          </div>
+          <div class="search">
+            <input type="text" placeholder="Looking For?" />
+            <div class="search_btn">
+              <img src="./assets/images/search.png" alt="" />
+            </div>
+          </div>
+        </nav>
+      <!-- </header> -->
+
+      <section class="adn_carousel_section">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slider_items">
+                <div class="slider_img">
+                  <a href=""><img src="./assets/images/Hero-img.jpg" alt="Slide 1" /></a>
                 </div>
+                <div class="slider_details">
+                  <div class="slider_tag aclove_inter">NEW GUIDES</div>
+                  <div class="slide_title">
+                    How to made the Perfect Homemade Pizza
+                  </div>
+                  <hr />
+                  <div class="author aclove_inter">
+                    <img src="./assets/images/user.png" alt="" />
+                    <a href="">George</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider_items">
+                <div class="slider_img">
+                  <a href=""><img src="./assets/images/Hero-img.jpg" alt="Slide 1" /></a>
+                </div>
+                <div class="slider_details">
+                  <div class="slider_tag aclove_inter">NEW GUIDES</div>
+                  <div class="slide_title">
+                    How to made the Perfect Homemade Pizza
+                  </div>
+                  <hr />
+                  <div class="author aclove_inter">
+                    <img src="./assets/images/user.png" alt="" />
+                    <a href="">George</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider_items">
+                <div class="slider_img">
+                  <a href=""><img src="./assets/images/Hero-img.jpg" alt="Slide 1" /></a>
+                </div>
+                <div class="slider_details">
+                  <div class="slider_tag aclove_inter">NEW GUIDES</div>
+                  <div class="slide_title">
+                    How to made the Perfect Homemade Pizza
+                  </div>
+                  <hr />
+                  <div class="author aclove_inter">
+                    <img src="./assets/images/user.png" alt="" />
+                    <a href="">George</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider_items">
+                <div class="slider_img">
+                  <a href=""><img src="./assets/images/Hero-img.jpg" alt="Slide 1" /></a>
+                </div>
+                <div class="slider_details">
+                  <div class="slider_tag aclove_inter">NEW GUIDES</div>
+                  <div class="slide_title">
+                    How to made the Perfect Homemade Pizza
+                  </div>
+                  <hr />
+                  <div class="author aclove_inter">
+                    <img src="./assets/images/user.png" alt="" />
+                    <a href="">George</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider_items">
+                <div class="slider_img">
+                  <a href=""><img src="./assets/images/Hero-img.jpg" alt="Slide 1" /></a>
+                </div>
+                <div class="slider_details">
+                  <div class="slider_tag aclove_inter">NEW GUIDES</div>
+                  <div class="slide_title">
+                    How to made the Perfect Homemade Pizza
+                  </div>
+                  <hr />
+                  <div class="author aclove_inter">
+                    <img src="./assets/images/user.png" alt="" />
+                    <a href="">George</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider_items">
+                <div class="slider_img">
+                  <a href=""><img src="./assets/images/Hero-img.jpg" alt="Slide 1" /></a>
+                </div>
+                <div class="slider_details">
+                  <div class="slider_tag aclove_inter">NEW GUIDES</div>
+                  <div class="slide_title">
+                    How to made the Perfect Homemade Pizza
+                  </div>
+                  <hr />
+                  <div class="author aclove_inter">
+                    <img src="./assets/images/user.png" alt="" />
+                    <a href="">George</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider_items">
+                <div class="slider_img">
+                  <a href=""><img src="./assets/images/Hero-img.jpg" alt="Slide 1" /></a>
+                </div>
+                <div class="slider_details">
+                  <div class="slider_tag aclove_inter">NEW GUIDES</div>
+                  <div class="slide_title">
+                    How to made the Perfect Homemade Pizza
+                  </div>
+                  <hr />
+                  <div class="author aclove_inter">
+                    <img src="./assets/images/user.png" alt="" />
+                    <a href="">George</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider_items">
+                <div class="slider_img">
+                  <a href=""><img src="./assets/images/Hero-img.jpg" alt="Slide 1" /></a>
+                </div>
+                <div class="slider_details">
+                  <div class="slider_tag aclove_inter">NEW GUIDES</div>
+                  <div class="slide_title">
+                    How to made the Perfect Homemade Pizza
+                  </div>
+                  <hr />
+                  <div class="author aclove_inter">
+                    <img src="./assets/images/user.png" alt="" />
+                    <a href="">George</a>
+                  </div>
+                </div>
+              </div>
             </div>
            
-        </nav>
-    </header>
-
-    <section class="adn_carousel_section">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="slider_items">
-                        <div class="slider_img">
-                            <img src="./assets/images/Hero-img.jpg" alt="Slide 1">
-                        </div>
-                        <div class="slider_details">
-                            <div class="slider_tag aclove_inter">
-                                NEW GUIDES
-                            </div>
-                            <div class="slide_title">
-                                How to made the Perfect Homemade Pizza
-                            </div>
-                            <hr>
-                            <div class="author aclove_inter">
-                                <img src="./assets/images/user.png" alt="">
-                                <span>George</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slider_items">
-                        <div class="slider_img">
-                            <img src="./assets/images/Hero-img.jpg" alt="Slide 1">
-                        </div>
-                        <div class="slider_details">
-                            <div class="slider_tag aclove_inter">
-                                NEW GUIDES
-                            </div>
-                            <div class="slide_title">
-                                How to made the Perfect Homemade Pizza
-                            </div>
-                            <hr>
-                            <div class="author aclove_inter">
-                                <img src="./assets/images/user.png" alt="">
-                                <span>George</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slider_items">
-                        <div class="slider_img">
-                            <img src="./assets/images/Hero-img.jpg" alt="Slide 1">
-                        </div>
-                        <div class="slider_details">
-                            <div class="slider_tag aclove_inter">
-                                NEW GUIDES
-                            </div>
-                            <div class="slide_title">
-                                How to made the Perfect Homemade Pizza
-                            </div>
-                            <hr>
-                            <div class="author aclove_inter">
-                                <img src="./assets/images/user.png" alt="">
-                                <span>George</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slider_items">
-                        <div class="slider_img">
-                            <img src="./assets/images/Hero-img.jpg" alt="Slide 1">
-                        </div>
-                        <div class="slider_details">
-                            <div class="slider_tag aclove_inter">
-                                NEW GUIDES
-                            </div>
-                            <div class="slide_title">
-                                How to made the Perfect Homemade Pizza
-                            </div>
-                            <hr>
-                            <div class="author aclove_inter">
-                                <img src="./assets/images/user.png" alt="">
-                                <span>George</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slider_items">
-                        <div class="slider_img">
-                            <img src="./assets/images/Hero-img.jpg" alt="Slide 1">
-                        </div>
-                        <div class="slider_details">
-                            <div class="slider_tag aclove_inter">
-                                NEW GUIDES
-                            </div>
-                            <div class="slide_title">
-                                How to made the Perfect Homemade Pizza
-                            </div>
-                            <hr>
-                            <div class="author aclove_inter">
-                                <img src="./assets/images/user.png" alt="">
-                                <span>George</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slider_items">
-                        <div class="slider_img">
-                            <img src="./assets/images/Hero-img.jpg" alt="Slide 1">
-                        </div>
-                        <div class="slider_details">
-                            <div class="slider_tag aclove_inter">
-                                NEW GUIDES
-                            </div>
-                            <div class="slide_title">
-                                How to made the Perfect Homemade Pizza
-                            </div>
-                            <hr>
-                            <div class="author aclove_inter">
-                                <img src="./assets/images/user.png" alt="">
-                                <span>George</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slider_items">
-                        <div class="slider_img">
-                            <img src="./assets/images/Hero-img.jpg" alt="Slide 1">
-                        </div>
-                        <div class="slider_details">
-                            <div class="slider_tag aclove_inter">
-                                NEW GUIDES
-                            </div>
-                            <div class="slide_title">
-                                How to made the Perfect Homemade Pizza
-                            </div>
-                            <hr>
-                            <div class="author aclove_inter">
-                                <img src="./assets/images/user.png" alt="">
-                                <span>George</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slider_items">
-                        <div class="slider_img">
-                            <img src="./assets/images/Hero-img.jpg" alt="Slide 1">
-                        </div>
-                        <div class="slider_details">
-                            <div class="slider_tag aclove_inter">
-                                NEW GUIDES
-                            </div>
-                            <div class="slide_title">
-                                How to made the Perfect Homemade Pizza
-                            </div>
-                            <hr>
-                            <div class="author aclove_inter">
-                                <img src="./assets/images/user.png" alt="">
-                                <span>George</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                
-            </div>
-            <!-- Pagination and Navigation Buttons -->
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+           
+            
+          </div>
+          <!-- Pagination and Navigation Buttons -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-        
-    </section>
-    <hr class="hero_section_hr">
+      </section>
+      <hr class="hero_section_hr" />
 
-    <section class="adn_hero_section">
+      <section class="adn_hero_section">
         <span class="aclove_inter dark_green">FRESH FEATURES</span>
         <div class="hero_main">
-            <div class="hero_img">
-                <img src="./assets/images/Hero-img.jpg" alt="">
-            </div>
-            <div class="hero_details">
-                <a href="https://article-alcove.com/easy-low-carb-recipes-for-a-healthy-diet/" target="_blank" class="aclove_secondary_color">Easy Low-Carb Recipes for a Healthy Diet</a>
-                <p>
-                    Staying on the healthy eating track can feel like a tightrope walk, especially when the carbs call your name. Low-carb meals are great allies, whether you’re on a ketogenic diet, …
-                </p>
-            </div>
+          <a href="" class="hero_img">
+            <img src="./assets/images/Hero-img.jpg" alt="" />
+          </a>
+          <div class="hero_details">
+            <a
+              href="https://article-alcove.com/easy-low-carb-recipes-for-a-healthy-diet/"
+              target="_blank"
+              class="aclove_secondary_color"
+              >Easy Low-Carb Recipes for a Healthy Diet</a
+            >
+            <p>
+              Staying on the healthy eating track can feel like a tightrope
+              walk, especially when the carbs call your name. Low-carb meals are
+              great allies, whether you’re on a ketogenic diet, …
+            </p>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="blogs">
+      <section class="blogs">
         <div class="blogs_posts">
-            <div class="blog_article">
-                <div class="blog_img">
-                    <img src="./assets/images/Hero-img.jpg" alt="">
-                </div>
-                <div class="blog_details">
-                        <h2><span class="blog_title">Slow Cooker Recipes: Set It and Forget It Meals</span></h2>
-                        <div class="author_details">
-                            <img src="./assets/images/user.png" alt="">
-                            <span class="author_name">Edith</span>
-                            <img src="./assets/images/calendar.png" alt="">
-                            <span>March 18, 2025</span>
-                        </div>
-                        <p class="blog_summary">
-                            In today’s whirlwind of a world, finding time for wholesome cooking can feel like a Herculean task. Enter the hero of the kitchen: the slow cooker! This trusty appliance transforms …
-                        </p>
-                </div>
+          <div class="blog_article">
+            <a href="" class="blog_img">
+              <img src="./assets/images/Hero-img.jpg" alt="" />
+            </a>
+            <div class="blog_details">
+              <h2>
+                <a href="" class="blog_title"
+                  >Slow Cooker Recipes: Set It and Forget It Meals</a
+                >
+              </h2>
+              <div class="author_details">
+                <img src="./assets/images/user.png" alt="" />
+                <a href="" class="author_name">Edith</a>
+                <img src="./assets/images/calendar.png" alt="" />
+                <span>March 18, 2025</span>
+              </div>
+              <p class="blog_summary">
+                In today’s whirlwind of a world, finding time for wholesome
+                cooking can feel like a Herculean task. Enter the hero of the
+                kitchen: the slow cooker! This trusty appliance transforms …
+              </p>
             </div>
-            <div class="blog_article">
-                <div class="blog_img">
-                    <img src="./assets/images/Hero-img.jpg" alt="">
-                </div>
-                <div class="blog_details">
-                        <h2><span class="blog_title">Slow Cooker Recipes: Set It and Forget It Meals</span></h2>
-                        <div class="author_details">
-                            <img src="./assets/images/user.png" alt="">
-                            <span class="author_name">Edith</span>
-                            <img src="./assets/images/calendar.png" alt="">
-                            <span>March 18, 2025</span>
-                        </div>
-                        <p class="blog_summary">
-                            In today’s whirlwind of a world, finding time for wholesome cooking can feel like a Herculean task. Enter the hero of the kitchen: the slow cooker! This trusty appliance transforms …
-                        </p>
-                </div>
+          </div>
+          <div class="blog_article">
+            <a href="" class="blog_img">
+              <img src="./assets/images/Hero-img.jpg" alt="" />
+            </a>
+            <div class="blog_details">
+              <h2>
+                <a href="" class="blog_title"
+                  >Slow Cooker Recipes: Set It and Forget It Meals</a
+                >
+              </h2>
+              <div class="author_details">
+                <img src="./assets/images/user.png" alt="" />
+                <a href="" class="author_name">Edith</a>
+                <img src="./assets/images/calendar.png" alt="" />
+                <span>March 18, 2025</span>
+              </div>
+              <p class="blog_summary">
+                In today’s whirlwind of a world, finding time for wholesome
+                cooking can feel like a Herculean task. Enter the hero of the
+                kitchen: the slow cooker! This trusty appliance transforms …
+              </p>
             </div>
-            <div class="blog_article">
-                <div class="blog_img">
-                    <img src="./assets/images/Hero-img.jpg" alt="">
-                </div>
-                <div class="blog_details">
-                        <h2><span class="blog_title">Slow Cooker Recipes: Set It and Forget It Meals</span></h2>
-                        <div class="author_details">
-                            <img src="./assets/images/user.png" alt="">
-                            <span class="author_name">Edith</span>
-                            <img src="./assets/images/calendar.png" alt="">
-                            <span>March 18, 2025</span>
-                        </div>
-                        <p class="blog_summary">
-                            In today’s whirlwind of a world, finding time for wholesome cooking can feel like a Herculean task. Enter the hero of the kitchen: the slow cooker! This trusty appliance transforms …
-                        </p>
-                </div>
+          </div>
+          <div class="blog_article">
+            <a href="" class="blog_img">
+              <img src="./assets/images/Hero-img.jpg" alt="" />
+            </a>
+            <div class="blog_details">
+              <h2>
+                <a href="" class="blog_title"
+                  >Slow Cooker Recipes: Set It and Forget It Meals</a
+                >
+              </h2>
+              <div class="author_details">
+                <img src="./assets/images/user.png" alt="" />
+                <a href="" class="author_name">Edith</a>
+                <img src="./assets/images/calendar.png" alt="" />
+                <span>March 18, 2025</span>
+              </div>
+              <p class="blog_summary">
+                In today’s whirlwind of a world, finding time for wholesome
+                cooking can feel like a Herculean task. Enter the hero of the
+                kitchen: the slow cooker! This trusty appliance transforms …
+              </p>
             </div>
-            <div class="blog_article">
-                <div class="blog_img">
-                    <img src="./assets/images/Hero-img.jpg" alt="">
-                </div>
-                <div class="blog_details">
-                        <h2><span class="blog_title">Slow Cooker Recipes: Set It and Forget It Meals</span></h2>
-                        <div class="author_details">
-                            <img src="./assets/images/user.png" alt="">
-                            <span class="author_name">Edith</span>
-                            <img src="./assets/images/calendar.png" alt="">
-                            <span>March 18, 2025</span>
-                        </div>
-                        <p class="blog_summary">
-                            In today’s whirlwind of a world, finding time for wholesome cooking can feel like a Herculean task. Enter the hero of the kitchen: the slow cooker! This trusty appliance transforms …
-                        </p>
-                </div>
+          </div>
+          <div class="blog_article">
+            <a href="" class="blog_img">
+              <img src="./assets/images/Hero-img.jpg" alt="" />
+            </a>
+            <div class="blog_details">
+              <h2>
+                <a href="" class="blog_title"
+                  >Slow Cooker Recipes: Set It and Forget It Meals</a
+                >
+              </h2>
+              <div class="author_details">
+                <img src="./assets/images/user.png" alt="" />
+                <a href="" class="author_name">Edith</a>
+                <img src="./assets/images/calendar.png" alt="" />
+                <span>March 18, 2025</span>
+              </div>
+              <p class="blog_summary">
+                In today’s whirlwind of a world, finding time for wholesome
+                cooking can feel like a Herculean task. Enter the hero of the
+                kitchen: the slow cooker! This trusty appliance transforms …
+              </p>
             </div>
+          </div>
+          <div class="blog_article">
+            <a href="" class="blog_img">
+              <img src="./assets/images/Hero-img.jpg" alt="" />
+            </a>
+            <div class="blog_details">
+              <h2>
+                <a href="" class="blog_title"
+                  >Slow Cooker Recipes: Set It and Forget It Meals</a
+                >
+              </h2>
+              <div class="author_details">
+                <img src="./assets/images/user.png" alt="" />
+                <a href="" class="author_name">Edith</a>
+                <img src="./assets/images/calendar.png" alt="" />
+                <span>March 18, 2025</span>
+              </div>
+              <p class="blog_summary">
+                In today’s whirlwind of a world, finding time for wholesome
+                cooking can feel like a Herculean task. Enter the hero of the
+                kitchen: the slow cooker! This trusty appliance transforms …
+              </p>
+            </div>
+          </div>
+          
         </div>
         <div class="aside">
-            <div class="ad_banner">
-                <span>Ad Banner</span>
-            </div>
-            <div class="reviews">
-                <h3 class="aclove_inter">REVIEWS</h3>
-                <div class="review_boxes">
-                    <div class="review_box">
-                        <div class="img_box">
-                            <img src="" alt="">
-                        </div>
-                        <div class="review_title">
-                            <a href="https://article-alcove.com/the-fine-cheese-co-review-artisan-cheeses-delivered-to-your-door/" target="_blank">
-                                The Fine Cheese Co. Review: Artisan Cheeses Delivered to Your Door</a>
-                                <div class="review_date">
-                                        <img src="./assets/images/calendar.png" alt="">
-                                        <span class="aclove_inter">March 18, 2025</span>
-                                </div>
-                        </div>
-                       
-                    </div>
-                    <div class="review_box">
-                        <div class="img_box">
-                            <img src="" alt="">
-                        </div>
-                        <div class="review_title">
-                            <a href="https://article-alcove.com/the-fine-cheese-co-review-artisan-cheeses-delivered-to-your-door/" target="_blank">
-                                The Fine Cheese Co. Review: Artisan Cheeses Delivered to Your Door</a>
-                                <div class="review_date">
-                                        <img src="./assets/images/calendar.png" alt="">
-                                        <span class="aclove_inter">March 18, 2025</span>
-                                </div>
-                        </div>
-                       
-                    </div>
-                    <div class="review_box">
-                        <div class="img_box">
-                            <img src="" alt="">
-                        </div>
-                        <div class="review_title">
-                            <a href="https://article-alcove.com/the-fine-cheese-co-review-artisan-cheeses-delivered-to-your-door/" target="_blank">
-                                The Fine Cheese Co. Review: Artisan Cheeses Delivered to Your Door</a>
-                                <div class="review_date">
-                                        <img src="./assets/images/calendar.png" alt="">
-                                        <span class="aclove_inter">March 18, 2025</span>
-                                </div>
-                        </div>
-                       
-                    </div>
-                    <div class="review_box">
-                        <div class="img_box">
-                            <img src="" alt="">
-                        </div>
-                        <div class="review_title">
-                            <a href="https://article-alcove.com/the-fine-cheese-co-review-artisan-cheeses-delivered-to-your-door/" target="_blank">
-                                The Fine Cheese Co. Review: Artisan Cheeses Delivered to Your Door</a>
-                                <div class="review_date">
-                                        <img src="./assets/images/calendar.png" alt="">
-                                        <span class="aclove_inter">March 18, 2025</span>
-                                </div>
-                        </div>
-                       
-                    </div>
-                    <div class="review_box">
-                        <div class="img_box">
-                            <img src="" alt="">
-                        </div>
-                        <div class="review_title">
-                            <a href="https://article-alcove.com/the-fine-cheese-co-review-artisan-cheeses-delivered-to-your-door/" target="_blank">
-                                The Fine Cheese Co. Review: Artisan Cheeses Delivered to Your Door</a>
-                                <div class="review_date">
-                                        <img src="./assets/images/calendar.png" alt="">
-                                        <span class="aclove_inter">March 18, 2025</span>
-                                </div>
-                        </div>
-                       
-                    </div>
-                   
+          <div class="ad_banner">
+            <span>Ad Banner</span>
+          </div>
+          <div class="reviews">
+            <h3 class="aclove_inter">REVIEWS</h3>
+            <div class="review_boxes">
+              <div class="review_box">
+                <div class="img_box">
+                  <img src="" alt="" />
                 </div>
-            </div>
-            <div class="reviews">
-                <h3 class="aclove_inter">TAGS</h3>
-                <div class="review_boxes tags_boxes">
-                   
-                   <span class="tags">Blogs</span>
-                   <span class="tags">Guides</span>
-                   <span class="tags">Reviews</span>
-                   <span class="tags">Confort Food and Family Favourites</span>
-                   <span class="tags">Confort Food and Family Favourites</span>
-                   <span class="tags">Confort Food and Family Favourites</span>
-                   <span class="tags">Confort Food and Family Favourites</span>
-                   <span class="tags">Confort Food and Family Favourites</span>
-                   <span class="tags">Confort Food and Family Favourites</span>
+                <div class="review_title">
+                  <a
+                    href="https://article-alcove.com/the-fine-cheese-co-review-artisan-cheeses-delivered-to-your-door/"
+                    target="_blank"
+                  >
+                    The Fine Cheese Co. Review: Artisan Cheeses Delivered to
+                    Your Door</a
+                  >
+                  <div class="review_date">
+                    <img src="./assets/images/calendar.png" alt="" />
+                    <span class="aclove_inter">March 18, 2025</span>
+                  </div>
                 </div>
-            </div>
-            <div class="reviews">
-                <h3 class="aclove_inter">LATEST BLOGS</h3>
-                <div class="review_boxes">
-                    <div class="review_box">
-                        <div class="latest_blogs">
-                            <img src="" alt="">
-                        </div>
-                        <div class="review_title">
-                            <a href="https://article-alcove.com/the-fine-cheese-co-review-artisan-cheeses-delivered-to-your-door/" target="_blank">
-                                The Fine Cheese Co. Review: Artisan Cheeses Delivered to Your Door</a>
-                                <div class="review_date">
-                                        <img src="./assets/images/calendar.png" alt="">
-                                        <span class="aclove_inter">March 18, 2025</span>
-                                </div>
-                        </div>
-                       
-                    </div>
-                    <div class="review_box">
-                        <div class="img_box">
-                            <img src="" alt="">
-                        </div>
-                        <div class="review_title">
-                            <a href="https://article-alcove.com/the-fine-cheese-co-review-artisan-cheeses-delivered-to-your-door/" target="_blank">
-                                The Fine Cheese Co. Review: Artisan Cheeses Delivered to Your Door</a>
-                                <div class="review_date">
-                                        <img src="./assets/images/calendar.png" alt="">
-                                        <span class="aclove_inter">March 18, 2025</span>
-                                </div>
-                        </div>
-                       
-                    </div>
-                    <div class="review_box">
-                        <div class="img_box">
-                            <img src="" alt="">
-                        </div>
-                        <div class="review_title">
-                            <a href="https://article-alcove.com/the-fine-cheese-co-review-artisan-cheeses-delivered-to-your-door/" target="_blank">
-                                The Fine Cheese Co. Review: Artisan Cheeses Delivered to Your Door</a>
-                                <div class="review_date">
-                                        <img src="./assets/images/calendar.png" alt="">
-                                        <span class="aclove_inter">March 18, 2025</span>
-                                </div>
-                        </div>
-                       
-                    </div>
-                    <div class="review_box">
-                        <div class="img_box">
-                            <img src="" alt="">
-                        </div>
-                        <div class="review_title">
-                            <a href="https://article-alcove.com/the-fine-cheese-co-review-artisan-cheeses-delivered-to-your-door/" target="_blank">
-                                The Fine Cheese Co. Review: Artisan Cheeses Delivered to Your Door</a>
-                                <div class="review_date">
-                                        <img src="./assets/images/calendar.png" alt="">
-                                        <span class="aclove_inter">March 18, 2025</span>
-                                </div>
-                        </div>
-                       
-                    </div>
-                    <div class="review_box">
-                        <div class="img_box">
-                            <img src="" alt="">
-                        </div>
-                        <div class="review_title">
-                            <a href="https://article-alcove.com/the-fine-cheese-co-review-artisan-cheeses-delivered-to-your-door/" target="_blank">
-                                The Fine Cheese Co. Review: Artisan Cheeses Delivered to Your Door</a>
-                                <div class="review_date">
-                                        <img src="./assets/images/calendar.png" alt="">
-                                        <span class="aclove_inter">March 18, 2025</span>
-                                </div>
-                        </div>
-                       
-                    </div>
-                   
+              </div>
+              <div class="review_box">
+                <div class="img_box">
+                  <img src="" alt="" />
                 </div>
+                <div class="review_title">
+                  <a
+                    href="https://article-alcove.com/the-fine-cheese-co-review-artisan-cheeses-delivered-to-your-door/"
+                    target="_blank"
+                  >
+                    The Fine Cheese Co. Review: Artisan Cheeses Delivered to
+                    Your Door</a
+                  >
+                  <div class="review_date">
+                    <img src="./assets/images/calendar.png" alt="" />
+                    <span class="aclove_inter">March 18, 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="review_box">
+                <div class="img_box">
+                  <img src="" alt="" />
+                </div>
+                <div class="review_title">
+                  <a
+                    href="https://article-alcove.com/the-fine-cheese-co-review-artisan-cheeses-delivered-to-your-door/"
+                    target="_blank"
+                  >
+                    The Fine Cheese Co. Review: Artisan Cheeses Delivered to
+                    Your Door</a
+                  >
+                  <div class="review_date">
+                    <img src="./assets/images/calendar.png" alt="" />
+                    <span class="aclove_inter">March 18, 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="review_box">
+                <div class="img_box">
+                  <img src="" alt="" />
+                </div>
+                <div class="review_title">
+                  <a
+                    href="https://article-alcove.com/the-fine-cheese-co-review-artisan-cheeses-delivered-to-your-door/"
+                    target="_blank"
+                  >
+                    The Fine Cheese Co. Review: Artisan Cheeses Delivered to
+                    Your Door</a
+                  >
+                  <div class="review_date">
+                    <img src="./assets/images/calendar.png" alt="" />
+                    <span class="aclove_inter">March 18, 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="review_box">
+                <div class="img_box">
+                  <img src="" alt="" />
+                </div>
+                <div class="review_title">
+                  <a
+                    href="https://article-alcove.com/the-fine-cheese-co-review-artisan-cheeses-delivered-to-your-door/"
+                    target="_blank"
+                  >
+                    The Fine Cheese Co. Review: Artisan Cheeses Delivered to
+                    Your Door</a
+                  >
+                  <div class="review_date">
+                    <img src="./assets/images/calendar.png" alt="" />
+                    <span class="aclove_inter">March 18, 2025</span>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="reviews">
+            <h3 class="aclove_inter">TAGS</h3>
+            <div class="review_boxes tags_boxes">
+              <span class="tags">Blogs</span>
+              <span class="tags">Guides</span>
+              <span class="tags">Reviews</span>
+              <span class="tags">Confort Food and Family Favourites</span>
+              <span class="tags">Confort Food and Family Favourites</span>
+              <span class="tags">Confort Food and Family Favourites</span>
+              <span class="tags">Confort Food and Family Favourites</span>
+              <span class="tags">Confort Food and Family Favourites</span>
+              <span class="tags">Confort Food and Family Favourites</span>
+            </div>
+          </div>
+          <div class="reviews">
+            <h3 class="aclove_inter">LATEST BLOGS</h3>
+            <div class="review_boxes">
+              <div class="review_box">
+                <div class="latest_blog_box">
+                  <img src="" alt="" />
+                </div>
+                <div class="review_title">
+                  <a
+                    href="https://article-alcove.com/the-fine-cheese-co-review-artisan-cheeses-delivered-to-your-door/"
+                    target="_blank"
+                  >
+                    The Fine Cheese Co. Review: Artisan Cheeses Delivered to
+                    Your Door</a
+                  >
+                  <div class="review_date">
+                    <img src="./assets/images/calendar.png" alt="" />
+                    <span class="aclove_inter">March 18, 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="review_box">
+                <div class="latest_blog_box">
+                  <img src="" alt="" />
+                </div>
+                <div class="review_title">
+                  <a
+                    href="https://article-alcove.com/the-fine-cheese-co-review-artisan-cheeses-delivered-to-your-door/"
+                    target="_blank"
+                  >
+                    The Fine Cheese Co. Review: Artisan Cheeses Delivered to
+                    Your Door</a
+                  >
+                  <div class="review_date">
+                    <img src="./assets/images/calendar.png" alt="" />
+                    <span class="aclove_inter">March 18, 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="review_box">
+                <div class="latest_blog_box">
+                  <img src="" alt="" />
+                </div>
+                <div class="review_title">
+                  <a
+                    href="https://article-alcove.com/the-fine-cheese-co-review-artisan-cheeses-delivered-to-your-door/"
+                    target="_blank"
+                  >
+                    The Fine Cheese Co. Review: Artisan Cheeses Delivered to
+                    Your Door</a
+                  >
+                  <div class="review_date">
+                    <img src="./assets/images/calendar.png" alt="" />
+                    <span class="aclove_inter">March 18, 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="review_box">
+                <div class="latest_blog_box">
+                  <img src="" alt="" />
+                </div>
+                <div class="review_title">
+                  <a
+                    href="https://article-alcove.com/the-fine-cheese-co-review-artisan-cheeses-delivered-to-your-door/"
+                    target="_blank"
+                  >
+                    The Fine Cheese Co. Review: Artisan Cheeses Delivered to
+                    Your Door</a
+                  >
+                  <div class="review_date">
+                    <img src="./assets/images/calendar.png" alt="" />
+                    <span class="aclove_inter">March 18, 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="review_box">
+                <div class="latest_blog_box">
+                  <img src="" alt="" />
+                </div>
+                <div class="review_title">
+                  <a
+                    href="https://article-alcove.com/the-fine-cheese-co-review-artisan-cheeses-delivered-to-your-door/"
+                    target="_blank" class="aclove_noto"
+                  >
+                    The Fine Cheese Co. Review: Artisan Cheeses Delivered to
+                    Your Door</a
+                  >
+                  <div class="review_date">
+                    <img src="./assets/images/calendar.png" alt="" />
+                    <span class="aclove_inter">March 18, 2025</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-</div>
+      </section>
+    </div>
 
     <footer>
-        <div class="center_div footer_div">
-            <div class="footer_col1">
-                <div class="footer_logo">
-                    <img src="./assets/images/logo.png" alt="">
-                </div>
-                <div class="footer_menu1">
-                    <span class="footer_headings">INFO</span>
-                    <ul class="aclove_inter">
-                        <li>
-                            <a href="">About</a>
-                        </li>
-                        <li>
-                            <a href="">Contact</a>
-                        </li>
-                        <li>
-                            <a href="">Privacy</a>
-                        </li>
-                        <li>
-                            <a href="">Cookie Policy</a>
-                        </li>
-                        <li>
-                            <a href="" class="text_wrap">Terms and conditions</a>
-                        </li>
-                        <li>
-                            <a href="">Imprint</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer_col2">
-                <div class="footer_menu1">
-                    <span class="footer_headings">GUIDES</span>
-                    <ul class="aclove_inter">
-                        <li>
-                            <a href="https://article-alcove.com/how-to-make-the-perfect-guacamole/">
-                                How to Make the Perfect Guacamole</a>
-                        </li>
-                        <li>
-                            <a href="https://article-alcove.com/how-to-meal-prep-for-a-week-of-healthy-eating/">
-                                How to Meal Prep for a Week of Healthy Eating</a>
-                        </li>
-                        <li>
-                            <a href="https://article-alcove.com/how-to-make-fresh-lemonade-at-home/">
-                                How to Make Fresh Lemonade at Home</a>
-                        </li>
-                        <li>
-                            <a href="https://article-alcove.com/how-to-make-a-decadent-chocolate-cake/">
-                                How to Make a Decadent Chocolate Cake</a>
-                        </li>
-                        <li>
-                            <a href="https://article-alcove.com/how-to-make-a-perfect-grilled-cheese-sandwich/">
-                                How to Make a Perfect Grilled Cheese Sandwich</a>
-                        </li>
-                        <li>
-                            <a href="https://article-alcove.com/how-to-make-the-perfect-homemade-pizza/">
-                                How to Make the Perfect Homemade Pizza</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer_col2 last_footer_menu">
-                <div class="footer_menu1">
-                    <span class="footer_headings">REVIEWS</span>
-                    <ul class="aclove_inter footer_lh">
-                        <li>
-                            <a href="https://article-alcove.com/the-fine-cheese-co-review-artisan-cheeses-delivered-to-your-door/" >
-                                The Fine Cheese Co. Review: Artisan Cheeses Delivered To Your Door</a>
-                        </li>
-                        <li>
-                            <a href="https://article-alcove.com/all-plants-review-delicious-plant-based-meals-delivered-to-your-door/" >
-                                All Plants Review: Delicious, Plant-Based Meals Delivered To Your Door</a>
-                        </li>
-                        <li>
-                            <a href="https://article-alcove.com/riverford-organic-farmers-review-bringing-fresh-sustainable-produce-to-your-doorstep/" >
-                                Riverford Organic Farmers Review: Bringing Fresh, Sustainable Produce To Your Doorstep</a>
-                        </li>
-                        <li>
-                            <a href="https://article-alcove.com/gousto-review-making-home-cooking-effortless-enjoyable/" >
-                                Gousto Review: Making Home Cooking Effortless &amp; Enjoyable</a>
-                        </li>
-                        <li>
-                            <a href="https://article-alcove.com/hellofresh-uk-review-fresh-ingredients-endless-variety/" >
-                                HelloFresh UK Review: Fresh Ingredients, Endless Variety</a>
-                        </li>
-                        <li>
-                            <a href="https://article-alcove.com/pip-nut-review-all-natural-nut-butters-for-a-healthier-breakfast/" >
-                                Pip &amp; Nut Review: All-Natural Nut Butters For A Healthier Breakfast</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="center_div footer_div">
+        <div class="footer_col1">
+          <div class="footer_logo">
+            <img src="./assets/images/logo.png" alt="" />
+          </div>
+          <div class="footer_menu1">
+            <span class="footer_headings">INFO</span>
+            <ul class="aclove_inter">
+              <li>
+                <a href="">About</a>
+              </li>
+              <li>
+                <a href="">Contact</a>
+              </li>
+              <li>
+                <a href="">Privacy</a>
+              </li>
+              <li>
+                <a href="">Cookie Policy</a>
+              </li>
+              <li>
+                <a href="" class="text_wrap">Terms and conditions</a>
+              </li>
+              <li>
+                <a href="">Imprint</a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="footer_col2">
+          <div class="footer_menu1">
+            <span class="footer_headings">GUIDES</span>
+            <ul class="aclove_inter">
+              <li>
+                <a
+                  href="https://article-alcove.com/how-to-make-the-perfect-guacamole/"
+                >
+                  How to Make the Perfect Guacamole</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://article-alcove.com/how-to-meal-prep-for-a-week-of-healthy-eating/"
+                >
+                  How to Meal Prep for a Week of Healthy Eating</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://article-alcove.com/how-to-make-fresh-lemonade-at-home/"
+                >
+                  How to Make Fresh Lemonade at Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://article-alcove.com/how-to-make-a-decadent-chocolate-cake/"
+                >
+                  How to Make a Decadent Chocolate Cake</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://article-alcove.com/how-to-make-a-perfect-grilled-cheese-sandwich/"
+                >
+                  How to Make a Perfect Grilled Cheese Sandwich</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://article-alcove.com/how-to-make-the-perfect-homemade-pizza/"
+                >
+                  How to Make the Perfect Homemade Pizza</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_col2 last_footer_menu">
+          <div class="footer_menu1">
+            <span class="footer_headings">REVIEWS</span>
+            <ul class="aclove_inter footer_lh">
+              <li>
+                <a
+                  href="https://article-alcove.com/the-fine-cheese-co-review-artisan-cheeses-delivered-to-your-door/"
+                >
+                  The Fine Cheese Co. Review: Artisan Cheeses Delivered To Your
+                  Door</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://article-alcove.com/all-plants-review-delicious-plant-based-meals-delivered-to-your-door/"
+                >
+                  All Plants Review: Delicious, Plant-Based Meals Delivered To
+                  Your Door</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://article-alcove.com/riverford-organic-farmers-review-bringing-fresh-sustainable-produce-to-your-doorstep/"
+                >
+                  Riverford Organic Farmers Review: Bringing Fresh, Sustainable
+                  Produce To Your Doorstep</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://article-alcove.com/gousto-review-making-home-cooking-effortless-enjoyable/"
+                >
+                  Gousto Review: Making Home Cooking Effortless &amp;
+                  Enjoyable</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://article-alcove.com/hellofresh-uk-review-fresh-ingredients-endless-variety/"
+                >
+                  HelloFresh UK Review: Fresh Ingredients, Endless Variety</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://article-alcove.com/pip-nut-review-all-natural-nut-butters-for-a-healthier-breakfast/"
+                >
+                  Pip &amp; Nut Review: All-Natural Nut Butters For A Healthier
+                  Breakfast</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
-    <div class="footer_ribbon aclove_secondary_bg ">
-        <p class="ribbon_text">
-            <span class="aclove_inter rbtxt1">© 2025. All Rights Reserved</span>
-        <span class="aclove_inter">
-            Article Alcove
-        </span>
-        </p>
+    <div class="footer_ribbon aclove_secondary_bg">
+      <p class="ribbon_text">
+        <span class="aclove_inter rbtxt1">© 2025. All Rights Reserved</span>
+        <span class="aclove_inter"> Article Alcove </span>
+      </p>
     </div>
-   
 
-   <script src="./assets/script.js"></script>
-</body>
+    <script src="./assets/script.js"></script>
+  </body>
 </html>
