@@ -206,11 +206,17 @@ nav .menu a {
 
 .slider_tag {
   color: #c7560f;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 8px;
+  display: block;
+  text-decoration: none;
 }
 .slider_items .slider_img {
   width: 109px;
   height: 165px;
   overflow: hidden;
+  object-fit: cover;
 }
 
 .slider_items .slider_img img {
@@ -226,9 +232,12 @@ nav .menu a {
 
 .slide_title {
   font-size: 20px;
+  line-height: 1;
   font-weight: 600;
-  padding-bottom: 8px;
+  padding-bottom: 12px;
   color: #345026;
+  text-decoration: none;
+  display: block;
 }
 .slider_details .author img {
   height: 14px;
@@ -237,7 +246,7 @@ nav .menu a {
 
 .slider_details .author {
   color: #c7560f;
-  padding: 8px 0;
+  padding: 12px 0;
   font-size: 14px;
   display: flex;
   align-items: center;
@@ -333,7 +342,7 @@ nav .menu a {
 }
 
 .hero_section_hr {
-  border: 1px solid green;
+  background-color:  green;
   height: 1px;
 }
 
