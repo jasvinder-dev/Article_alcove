@@ -8,10 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
-        // autoplay: {
-        //     delay: 3000, // Auto slide every 3 seconds
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 3000, // Auto slide every 3 seconds
+            disableOnInteraction: false,
+        },
 
         breakpoints: {
             0: { // For very small screens
@@ -58,6 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Close Sidebar When Clicking on Overlay
     overlay.addEventListener("click", closeSidebar);
 });
+
+
 
 
 
