@@ -26,3 +26,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const sidebar = document.getElementById("sidebar");
+    const openBtn = document.getElementById("openSidebar");
+    const closeBtn = document.getElementById("closeSidebar");
+
+    // Open Sidebar
+    openBtn.addEventListener("click", function () {
+        sidebar.classList.add("open");
+    });
+
+    // Close Sidebar
+    closeBtn.addEventListener("click", function () {
+        sidebar.classList.remove("open");
+    });
+
+    // Close Sidebar When Clicking Outside
+    document.addEventListener("click", function (event) {
+        if (!sidebar.contains(event.target) && !openBtn.contains(event.target)) {
+            sidebar.classList.remove("open");
+        }
+    });
+});
+
+
