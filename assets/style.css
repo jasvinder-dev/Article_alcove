@@ -183,9 +183,6 @@ nav .menu a {
 .mob_v{
     display: none;
   }
-  .desktop_v{
-    display: block;
-  }
 
 .adn_carousel_section {
     padding: 20px 0;
@@ -635,7 +632,7 @@ footer ul li a {
     background-color: #f7f7f7;
     overflow-x: hidden;
     transition: 0.3s;
-    padding-top: 60px;
+    padding-top: 40px;
     z-index: 3;
 }
 
@@ -643,15 +640,16 @@ footer ul li a {
 .sidebar a {
     padding: 10px 15px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 600;
     color: black;
     display: block;
     transition: 0.2s;
+    font-family: "Inter";
 }
 
-/* Hover Effect */
-.sidebar a:hover {
-    background-color: #575757;
+.mobile_menu_items{
+    border-bottom: 1px solid #8d8d8d;
 }
 
 /* Close Button */
@@ -667,7 +665,27 @@ footer ul li a {
 
 /* Sidebar Open Effect */
 .sidebar.open {
-    width: 250px;
+    width: 300px;
+}
+
+/* Background Overlay (Hidden by Default) */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 2;
+}
+
+/* Show Overlay When Sidebar is Open */
+.overlay.show {
+    opacity: 1;
+    visibility: visible;
 }
 
 
@@ -684,6 +702,11 @@ footer ul li a {
     align-items: start;
     height: 93px;
     padding: 20px 15px;
+  }
+  
+
+  .upper_nav .mobile_v{
+    padding: 23px 31px;
   }
   .upper_nav_txt {
     padding-top: 0;
@@ -807,12 +830,79 @@ footer ul li a {
   .last_footer_menu ul li a{
     word-spacing: 2px;
   }
+
+  .last_footer_menu{
+    padding-bottom: 30px;
+  }
   .tags_boxes{
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .tags{
     display: inline;
   }
+}
+
+@media screen and (max-width:768px) {
+    .adn_carousel_section{
+        display: none;
+    }
+    .center_div {
+        width: 100%;
+        padding: 0 15px;
+      }
+      .upper_nav.desktop_v{
+        display: block;
+      }
+    .hero_details a {
+       width: 100%;
+       line-height: 1.2;
+    }
+    .hero_details p{
+        line-height: 1.1;
+    }
+    .search input{
+        width: 100%;
+    }
+    .upper_nav{
+        height: 121px;
+    }
+    .upper_nav_txt{
+        padding-top: 5px;
+    }
+
+    /* Slider */
+
+    .swiper-button-next::after{
+        display: none;
+    }
+
+    /* Slider */
+
+
+    .hero_details p{
+        width: 100%;
+        font-size: 15px;
+    }
+
+
+    .blog_img img{
+        height: 311px;
+        width: 485px;
+    }
+    .blog_img{
+        height: 311px;
+    }
+    .blog_title{
+        font-size: 20px;
+    }
+    .blog_details h2{
+        width: 100%;
+    }
+    .blog_details{
+        padding: 30px;
+        height: 100%;
+    }
+
 }

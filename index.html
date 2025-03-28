@@ -26,9 +26,18 @@
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
+    <div class="upper_nav mob_v">
+      <a href=""><img src="./assets/images/logo.png" alt="" class="logo" /></a>
+      <p class="upper_nav_txt">
+        <span class="light_green_txt">The Food Blog</span>
+      </p>
+      <div class="mob_menu">
+        <img src="./assets/images/menu.png" alt="mobile Menu button" id="openSidebar">
+      </div>
+    </div>
     <div class="center_div">
       <!-- <header> -->
-        <div class="upper_nav">
+        <div class="upper_nav desktop_v">
           <a href=""><img src="./assets/images/logo.png" alt="" class="logo" /></a>
           <p class="upper_nav_txt">
             <span class="light_green_txt">The Food Blog</span>
@@ -77,13 +86,16 @@
       <!-- </header> -->
 
       <div class="mobile_menu">
+        <!-- Black Overlay -->
+    <div id="overlay" class="overlay"></div>
+
         <div id="sidebar" class="sidebar">
           <a href="javascript:void(0)" class="closebtn" id="closeSidebar">&times;</a>
-          <a href="#">Home</a>
-          <a href="#">Blog</a>
-          <a href="#">New Guides</a>
-          <a href="#">Reviews</a>
-          <a href="#">Food & Recipes</a>
+          <a href="#" class="mobile_menu_items">Home</a>
+          <a href="#" class="mobile_menu_items">Blog</a>
+          <a href="#" class="mobile_menu_items">New Guides</a>
+          <a href="#" class="mobile_menu_items">Reviews</a>
+          <a href="#" class="mobile_menu_items"><span>Food & Recipes</span> <img src="./assets/images/down-angle.png" alt=""></a>
       </div>
       </div>
 
@@ -428,52 +440,6 @@
 
       <section class="blogs">
         <div class="blogs_posts">
-          <div class="blog_article">
-            <a href="" class="blog_img">
-              <img src="./assets/images/Hero-img.jpg" alt="" />
-            </a>
-            <div class="blog_details">
-              <h2>
-                <a href="" class="blog_title"
-                  >Slow Cooker Recipes: Set It and Forget It Meals</a
-                >
-              </h2>
-              <div class="author_details">
-                <img src="./assets/images/user.png" alt="" />
-                <a href="" class="author_name">Edith</a>
-                <img src="./assets/images/calendar.png" alt="" />
-                <span>March 18, 2025</span>
-              </div>
-              <p class="blog_summary">
-                In today’s whirlwind of a world, finding time for wholesome
-                cooking can feel like a Herculean task. Enter the hero of the
-                kitchen: the slow cooker! This trusty appliance transforms …
-              </p>
-            </div>
-          </div>
-          <div class="blog_article">
-            <a href="" class="blog_img">
-              <img src="./assets/images/Hero-img.jpg" alt="" />
-            </a>
-            <div class="blog_details">
-              <h2>
-                <a href="" class="blog_title"
-                  >Slow Cooker Recipes: Set It and Forget It Meals</a
-                >
-              </h2>
-              <div class="author_details">
-                <img src="./assets/images/user.png" alt="" />
-                <a href="" class="author_name">Edith</a>
-                <img src="./assets/images/calendar.png" alt="" />
-                <span>March 18, 2025</span>
-              </div>
-              <p class="blog_summary">
-                In today’s whirlwind of a world, finding time for wholesome
-                cooking can feel like a Herculean task. Enter the hero of the
-                kitchen: the slow cooker! This trusty appliance transforms …
-              </p>
-            </div>
-          </div>
           <div class="blog_article">
             <a href="" class="blog_img">
               <img src="./assets/images/Hero-img.jpg" alt="" />

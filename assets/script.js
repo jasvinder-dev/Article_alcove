@@ -8,6 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
+        autoplay: {
+            delay: 3000, // Auto slide every 3 seconds
+            disableOnInteraction: false,
+        },
 
         breakpoints: {
             0: { // For very small screens
@@ -31,23 +35,29 @@ document.addEventListener("DOMContentLoaded", function () {
     const sidebar = document.getElementById("sidebar");
     const openBtn = document.getElementById("openSidebar");
     const closeBtn = document.getElementById("closeSidebar");
+    const overlay = document.getElementById("overlay");
 
-    // Open Sidebar
-    openBtn.addEventListener("click", function () {
+    // Function to Open Sidebar
+    function openSidebar() {
         sidebar.classList.add("open");
-    });
+        overlay.classList.add("show");
+    }
 
-    // Close Sidebar
-    closeBtn.addEventListener("click", function () {
+    // Function to Close Sidebar
+    function closeSidebar() {
         sidebar.classList.remove("open");
-    });
+        overlay.classList.remove("show");
+    }
 
-    // Close Sidebar When Clicking Outside
-    document.addEventListener("click", function (event) {
-        if (!sidebar.contains(event.target) && !openBtn.contains(event.target)) {
-            sidebar.classList.remove("open");
-        }
-    });
+    // Open Sidebar on Button Click
+    openBtn.addEventListener("click", openSidebar);
+
+    // Close Sidebar on Close Button Click
+    closeBtn.addEventListener("click", closeSidebar);
+
+    // Close Sidebar When Clicking on Overlay
+    overlay.addEventListener("click", closeSidebar);
 });
+
 
 
