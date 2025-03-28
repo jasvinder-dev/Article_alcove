@@ -643,11 +643,11 @@ footer ul li a {
 
 /* Sidebar Links */
 .sidebar a {
-  padding: 10px 15px;
+  padding: 7px 15px;
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
-  color: black;
+  color: #363636;
   display: block;
   transition: 0.2s;
   font-family: "Inter";
@@ -660,9 +660,9 @@ footer ul li a {
 /* Close Button */
 .closebtn {
   position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 30px;
+  top: 0px;
+  right: 8px;
+  font-size: 30px !important;
   color: white;
   cursor: pointer;
 }
@@ -694,6 +694,10 @@ footer ul li a {
 
 /* --------------------Footer-------------------------------------- */
 
+
+
+/* ------------------------------------------------------------MOBILE VERSION----------------------------------------------------------------------------- */
+
 @media only screen and (max-width: 600px) {
   .logo {
     height: 23px;
@@ -721,6 +725,12 @@ footer ul li a {
   }
   .mob_menu {
     display: block;
+  }
+  .mob_sub_menu{
+    display: flex !important;
+    justify-content: start;
+    align-items: center;
+    gap: 4px;
   }
   nav .menu {
     display: none;
@@ -839,14 +849,31 @@ footer ul li a {
   .last_footer_menu {
     padding-bottom: 30px;
   }
-  .tags_boxes {
+  /* .tags_boxes {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .tags {
     display: inline;
-  }
+  } */
+
+  .tags_boxes {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Align items to the left */
+    gap: 5px; /* Adds space between tags */
+}
+
+.tags {
+    display: inline-block; /* Ensures the anchor only takes content width */
+    padding: 5px 10px; /* Adds padding for better appearance */
+    text-decoration: none; /* Removes underline */
+    color: #333; /* Text color */
+    white-space: nowrap; /* Prevents text from breaking */
+}
+
+
 }
 
 @media screen and (max-width: 768px) {
