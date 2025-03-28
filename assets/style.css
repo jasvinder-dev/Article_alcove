@@ -369,7 +369,7 @@ nav .menu a {
   transition: 350ms;
 }
 .blog_details {
-  height: 305px;
+  height: 100%;
   background-color: white;
   padding: 60px 30px;
 }
@@ -571,18 +571,20 @@ footer ul li a {
 }
 .footer_headings {
   color: #c7560f;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
+  display: block;
+  padding-bottom: 8px;
 }
 
 .footer_col1 {
   display: flex;
   justify-content: start;
-  gap: 60px;
+  gap: 70px;
 }
 
 .footer_menu1 ul li {
-  padding-bottom: 10px;
+  padding-bottom: 12px;
 }
 .footer_menu1 ul li a:hover {
   color: #c7560f;
@@ -601,7 +603,7 @@ footer ul li a {
 }
 
 .last_footer_menu ul li a {
-  word-spacing: 7px;
+  word-spacing: 5px;
 }
 .text_wrap {
   text-wrap-mode: nowrap;
@@ -704,7 +706,7 @@ footer ul li a {
     height: 93px;
     padding: 20px 15px;
   }
-  hr {
+  .hero_section_hr {
     margin-top: 20px;
   }
 
@@ -848,9 +850,9 @@ footer ul li a {
 }
 
 @media screen and (max-width: 768px) {
-  .adn_carousel_section {
+  /* .adn_carousel_section {
     display: none;
-  }
+  } */
   .center_div {
     width: 100%;
     padding: 0 15px;
