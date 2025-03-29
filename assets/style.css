@@ -207,6 +207,7 @@ nav .menu a {
 .menu_container .menu_col h4 {
   margin-bottom: 10px;
   color: var(--brown-color);
+  font-family: "Inter", serif;
 }
 
 .menu_col ul {
@@ -1053,6 +1054,7 @@ footer ul li a {
   .mob_sub_menu_items ul li a{
     font-size: 14px;
     padding: 8px;
+    font-family: "Inter", serif;
   }
  
   .mob_sub_menu_items ul li a:hover{
