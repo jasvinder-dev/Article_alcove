@@ -60,6 +60,22 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// Get the elements
+const mobSubMenu = document.querySelector('.mob_sub_menu');
+const subMenu = document.querySelector('.mob_sub_menu_items');
+
+// Add a click event listener to the mob_sub_menu
+mobSubMenu.addEventListener('click', function() {
+  // Toggle the display property between block and none
+  if (subMenu.style.display === 'none' || subMenu.style.display === '') {
+    subMenu.style.display = 'block';
+  } else {
+    subMenu.style.display = 'none';
+  }
+});
+
+
+
 
 
 
