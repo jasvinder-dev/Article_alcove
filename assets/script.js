@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 slidesPerView: 2,
                 spaceBetween: 15,
             },
-            1024: { // Desktops and larger screens
+            1025: { // Desktops and larger screens
                 slidesPerView: 3,
                 spaceBetween: 20,
             },
