@@ -556,6 +556,7 @@ nav .menu a {
 .review_box img {
   width: 88px;
   height: 102px;
+  object-fit: cover;
 }
 
 /* Latest blogs */
@@ -582,6 +583,7 @@ nav .menu a {
 .latest_blog_box img {
   width: 89px;
   height: 75px;
+  object-fit: cover;
 }
 
 /* Latest blogs */
@@ -1037,6 +1039,24 @@ footer ul li a {
   }
   .mob_menu {
     display: block;
+  }
+  .mob_sub_menu_items{
+    display: none;
+  }
+  .mob_sub_menu_items ul{
+    padding-left: 15px;
+    border-bottom: 1px solid gray;
+  }
+  .mob_sub_menu_items ul li{
+    list-style: none;
+  }
+  .mob_sub_menu_items ul li a{
+    font-size: 14px;
+    padding: 8px;
+  }
+ 
+  .mob_sub_menu_items ul li a:hover{
+    color: var(--brown-color);
   }
 
   .hero_section_hr {
