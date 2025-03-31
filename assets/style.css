@@ -564,7 +564,7 @@ nav .menu a {
   width: 88px;
   overflow: hidden;
 }
-.review_box .outer_img_box{
+.review_box .outer_img_box {
   height: 102px;
   width: 88px;
 }
@@ -606,7 +606,7 @@ nav .menu a {
   width: 100%;
   object-fit: cover;
 }
-.latest_blog_box{
+.latest_blog_box {
   height: 75px;
   width: 88px;
   overflow: hidden;
@@ -877,10 +877,24 @@ footer ul li a {
 .blog_categories_item {
   border: 1px solid var(--brown-color);
 }
+.blog_cat_overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), transparent 75%);
+  transition: 450ms;
+}
 .blog_categories_item .blog_cat_img {
   height: 194px;
   width: 295px;
   margin-bottom: 15px;
+  position: relative;
+}
+.blog_categories_item:hover .blog_cat_overlay {
+  background:transparent;
+  transition: 450ms;
 }
 .blog_categories_item .blog_cat_img img {
   height: 100%;
@@ -921,61 +935,29 @@ footer ul li a {
 
 /* -------------------------------------------BLOG CATEGORY PAGE SECTION end------------------------------------------- */
 
-
-
 /* ------------------------------------------BLOG DETAILS PAGE------------------------------------------ */
 
-
-.blog_detail_hero_section{
+.blog_detail_hero_section {
   margin-top: 30px;
 }
 
-.blog_detail_hero_img{
+.blog_detail_hero_img {
   height: 600px;
 }
 
-.blog_detail_hero_img img{
+.blog_detail_hero_img img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-.Blog_detail_box{
+.Blog_detail_box {
   background-color: white;
   padding: 70px;
   margin-bottom: 80px;
 }
-.blog_details_content{
+.blog_details_content {
   width: 750px;
   margin: auto;
-}
-
-.blog_details_content h1{
-  font-size: 36px;
-  color: #363636;
-  line-height: 1.6;
-  font-family: var(--font-family-main);
-}
-.blog_details_content .blog_seperator{
-  height: 1px;
-  background-color: var(--brown-color);
-  margin-top: 20px;
-}
-
-.author_details{
-  margin-top: 20px;
-  margin-bottom: 40px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.author_details a{
-  font-size: 14px;
-  font-family: var(--font-family-secodnary);
-  color: var(--brown-color);
-}
-
-.blog_details_content{
   font-family: var(--font-family-secodnary);
   font-size: 15px;
   color: #363636;
@@ -983,36 +965,62 @@ footer ul li a {
   line-height: 1.5;
 }
 
-.blog_details_content p{
+.blog_details_content h1 {
+  font-size: 36px;
+  color: #363636;
+  line-height: 1.6;
+  font-family: var(--font-family-main);
+}
+.blog_details_content .blog_seperator {
+  height: 1px;
+  background-color: var(--brown-color);
+  margin-top: 20px;
+}
+
+.author_details {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.author_details a {
+  font-size: 14px;
+  font-family: var(--font-family-secodnary);
+  color: var(--brown-color);
+}
+
+.blog_details_content p {
   margin-bottom: 20px;
 }
-.blog_details_content h2{
+.blog_details_content h2 {
   font-size: 28px;
   color: #363636;
   margin-bottom: 30px;
   font-family: var(--font-family-main);
 }
-.blog_details_content .blog_details_other_img{
+.blog_details_content .blog_details_other_img {
   width: 100%;
   margin-bottom: 30px;
 }
 
-.blog_details_content ul{
+.blog_details_content ul {
   padding-left: 20px;
 }
 
-.blog_details_content ul li{
+.blog_details_content ul li {
   padding-bottom: 8px;
 }
 
-.author_social_media{
-display: flex;
-gap: 8px;
-padding: 40px 0;
-margin: auto;
-width: 750px;
+.author_social_media {
+  display: flex;
+  gap: 8px;
+  padding: 40px 0;
+  margin: auto;
+  width: 750px;
 }
-.social_media{
+.social_media {
   background: var(--brown-color);
   border-radius: 50%;
   width: 30px;
@@ -1022,16 +1030,64 @@ width: 750px;
   padding: 6px;
 }
 
-.social_media:hover{
+.social_media:hover {
   background-color: gray;
 }
-.social_media img{
+.social_media img {
   height: 18px;
 }
 
+/* ------------------------------------------BLOGS DETAIL PAGE  END------------------------------------------ */
 
 
-/* ------------------------------------------BLOG DETAILS PAGE  END------------------------------------------ */
+
+/* ------------------------------------------PRIVACY PAGE ------------------------------------------ */
+
+
+.privacy_hero_section {
+  margin-top: 30px;
+}
+
+.privacy_hero_img {
+  height: 350px;
+}
+
+.privacy_hero_img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.privacy_box {
+  background-color: white;
+  padding: 70px;
+  margin-bottom: 80px;
+}
+.privacy_content {
+  width: 750px;
+  margin: auto;
+  font-family: var(--font-family-secodnary);
+  font-size: 15px;
+  color: #363636;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.privacy_content h1, .privacy_content h2 {
+  font-size: 36px;
+  color: #363636;
+  line-height: 1.6;
+  font-family: var(--font-family-main);
+  padding-bottom: 20px;
+}
+.privacy_content p{
+  font-family: var(--font-family-secodnary);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+
+/* ------------------------------------------PRIVACY PAGE  END------------------------------------------ */
 
 
 /* --------------------Footer-------------------------------------- */
@@ -1228,6 +1284,62 @@ width: 750px;
     color: #333;
     white-space: nowrap;
   }
+
+  /* Blog category page mobile version */
+
+  .blog_hero_img{
+    height: 165px;
+  }
+  .blog_categories{
+    padding: 30px;
+  }
+  .blog_categories h1{
+font-size: 25px;
+  }
+  /* Blog category page mobile version end */
+
+
+  /* Blog Detail Page mobile version */
+
+  .blog_detail_hero_img{
+    height: 210px;
+  }
+  .Blog_detail_box{
+    padding: 30px;
+  }
+  .blog_details_content{
+    width: 100%;
+  }
+  .blog_details_content h1{
+    font-size: 25px;
+    padding-top: 30px;
+  }
+  .blog_details_content h2{
+    font-size: 24px;
+  }
+
+
+
+  /* Blog Detail Page mobile version end */
+
+  /* Privacy Page Mobile version */
+
+  .privacy_hero_img {
+    height: 160px;
+}
+.privacy_box{
+  padding: 40px;
+}
+.privacy_content{
+  width: 100%;
+}
+.privacy_content h1, .privacy_content h2{
+  font-size: 25px;
+}
+
+
+
+  /* Privacy Page Mobile version end */
 }
 
 /* ---------------------------------------------------------TABLET-------------------------------------------------------------------- */
@@ -1351,4 +1463,25 @@ width: 750px;
     padding: 30px;
     height: 100%;
   }
+
+  /* Blog Category tablet version */
+
+  .blog_categories h1{
+    font-size: 30px;
+  }
+
+  .blog_categories{
+    padding: 30px;
+  } 
+
+  .blog_categories_item .blog_cat_img{
+    width: 442px;
+    height: 292px;
+  }
+  .blog_cat_details {
+    width: 442px;
+  }
+  
+
+  /* Blog Category tablet version end */
 }
