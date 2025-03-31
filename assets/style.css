@@ -5,6 +5,8 @@
   --secondary-green: #8aa556;
   --bg-color: #f7eed5;
   --brown-color: #c7560f;
+  --font-family-main: "Noto Serif", serif;
+  --font-family-secodnary: "Inter", serif;
 }
 
 * {
@@ -17,10 +19,10 @@
 }
 
 .aclove_noto {
-  font-family: "Noto Serif", serif;
+  font-family: var(--font-family-main);
 }
 .aclove_inter {
-  font-family: "Inter", serif;
+  font-family: var(--font-family-secodnary);
 }
 
 .dark_green {
@@ -46,7 +48,7 @@ body {
   min-height: 100vh;
   width: 100%;
   background-color: var(--bg-color);
-  font-family: "Noto Serif", serif;
+  font-family: var(--font-family-main);
 }
 
 .logo {
@@ -59,7 +61,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  font-family: "Inter", serif;
+  font-family: var(--font-family-secodnary);
   padding: 31px 30px 30px 30px;
   height: 90px;
   position: relative;
@@ -122,7 +124,7 @@ nav .menu a {
   text-decoration: none;
   color: white;
   font-size: 17px;
-  font-family: "Inter", serif;
+  font-family: var(--font-family-secodnary);
   font-weight: 600;
   display: block;
 }
@@ -207,7 +209,7 @@ nav .menu a {
 .menu_container .menu_col h4 {
   margin-bottom: 10px;
   color: var(--brown-color);
-  font-family: "Inter", serif;
+  font-family: var(--font-family-secodnary);
 }
 
 .menu_col ul {
@@ -433,7 +435,7 @@ nav .menu a {
 .hero_details p {
   width: 60%;
   text-align: center;
-  font-family: "Inter", serif;
+  font-family: var(--font-family-secodnary);
   font-size: 18px;
   color: #363636;
   word-spacing: 2px;
@@ -505,7 +507,7 @@ nav .menu a {
   font-size: 14px;
   color: var(--brown-color);
   padding: 20px 0;
-  font-family: "Inter", serif;
+  font-family: var(--font-family-secodnary);
 }
 
 .blog_details .author_details img {
@@ -517,7 +519,7 @@ nav .menu a {
 }
 
 .blog_summary {
-  font-family: "Inter", serif;
+  font-family: var(--font-family-secodnary);
   font-weight: 300;
   color: #363636;
   font-size: 15px;
@@ -531,7 +533,7 @@ nav .menu a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Inter", serif;
+  font-family: var(--font-family-secodnary);
   margin-bottom: 25px;
 }
 
@@ -591,7 +593,7 @@ nav .menu a {
 
 .review_box .review_title {
   text-align: left;
-  font-family: "Noto serif", serif;
+  font-family: var(--font-family-main);
   font-size: 14px;
   font-weight: 600;
 }
@@ -631,7 +633,7 @@ nav .menu a {
   padding: 5px;
   margin: 3px;
   color: var(--primary-green);
-  font-family: "Inter", serif;
+  font-family: var(--font-family-secodnary);
   font-size: 14px;
   text-decoration: none;
   transition: 350ms;
@@ -767,7 +769,7 @@ footer ul li a {
   color: #363636;
   display: block;
   transition: 0.2s;
-  font-family: "Inter";
+  font-family: var(--font-family-secodnary);
 }
 
 .mobile_menu_items {
@@ -847,22 +849,22 @@ footer ul li a {
     align-items: center;
     gap: 4px;
   }
-  .mob_sub_menu_items{
+  .mob_sub_menu_items {
     display: none;
   }
-  .mob_sub_menu_items ul{
+  .mob_sub_menu_items ul {
     padding-left: 15px;
     border-bottom: 1px solid gray;
   }
-  .mob_sub_menu_items ul li{
+  .mob_sub_menu_items ul li {
     list-style: none;
   }
-  .mob_sub_menu_items ul li a{
+  .mob_sub_menu_items ul li a {
     font-size: 14px;
     padding: 8px;
   }
- 
-  .mob_sub_menu_items ul li a:hover{
+
+  .mob_sub_menu_items ul li a:hover {
     color: var(--brown-color);
   }
   nav .menu {
@@ -1015,16 +1017,16 @@ footer ul li a {
   nav .menu {
     display: none;
   }
-  nav{
+  nav {
     justify-content: center;
   }
-  nav .search{
+  nav .search {
     width: 371px;
   }
-  nav .search input{
+  nav .search input {
     width: 300px;
   }
-  nav .search .search_btn{
+  nav .search .search_btn {
     width: 71px;
   }
   .upper_nav {
@@ -1041,23 +1043,23 @@ footer ul li a {
   .mob_menu {
     display: block;
   }
-  .mob_sub_menu_items{
+  .mob_sub_menu_items {
     display: none;
   }
-  .mob_sub_menu_items ul{
+  .mob_sub_menu_items ul {
     padding-left: 15px;
     border-bottom: 1px solid gray;
   }
-  .mob_sub_menu_items ul li{
+  .mob_sub_menu_items ul li {
     list-style: none;
   }
-  .mob_sub_menu_items ul li a{
+  .mob_sub_menu_items ul li a {
     font-size: 14px;
     padding: 8px;
-    font-family: "Inter", serif;
+    font-family: var(--font-family-secodnary);
   }
- 
-  .mob_sub_menu_items ul li a:hover{
+
+  .mob_sub_menu_items ul li a:hover {
     color: var(--brown-color);
   }
 
@@ -1082,9 +1084,7 @@ footer ul li a {
     line-height: 1.1;
     font-size: 15px;
   }
-  /* .upper_nav {
-    height: 121px;
-  } */
+
   .upper_nav_txt {
     padding-top: 5px;
   }
